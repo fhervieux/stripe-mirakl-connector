@@ -168,6 +168,11 @@ class StripeTransferFactory implements LoggerAwareInterface
                     case 20: return $this->putTransferOnHold($transfer, $e->getMessage());
                 }
             }
+        } else {
+            return $this->putTransferOnHold(
+                $transfer,
+                sprintf(StripeTransfer::TRANSFER_STATUS_REASON_PAYMENT_NOT_FOUND)
+            );
         }
 
         // All good

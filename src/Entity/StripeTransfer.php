@@ -40,6 +40,7 @@ class StripeTransfer
     // Transfer status reasons: on hold
     public const TRANSFER_STATUS_REASON_SHOP_NOT_READY = 'Cannot find Stripe account for shop ID %s';
     public const TRANSFER_STATUS_REASON_ORDER_NOT_READY = 'Order is not ready yet, status is %s';
+    public const TRANSFER_STATUS_REASON_PAYMENT_NOT_FOUND = 'Order is not ready yet, payment not found';
     public const TRANSFER_STATUS_REASON_LINE_ITEM_NOT_READY = 'One of the line items is not ready yet, status is %s';
     public const TRANSFER_STATUS_REASON_PAYMENT_NOT_READY = 'Payment %s is not ready yet, status is %s';
     public const TRANSFER_STATUS_REASON_REFUND_NOT_FOUND = 'Cannot find StripeRefund with ID %s';
